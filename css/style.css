@@ -89,6 +89,8 @@ p {
 	font-size: 1.25rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
+	width: max-content;
+	max-width: calc(100% - 4rem);
 }
 
 #project-container {
@@ -117,6 +119,7 @@ p {
 .project > p {
 	margin-left: 0em;
 	margin-right 0em;
+	width: auto;
 }
 
 #project-container .project:first-child {
@@ -265,6 +268,9 @@ a:visited {
 
 	.project > p {
 		color: white;
+		background: black;
+		border-left: none;
+		border-right: none;
 	}
 
 	.project a {
@@ -281,5 +287,11 @@ a:visited {
 
 	#project-container .project:last-child {
 		border-right: #23b3d3 solid 1rem;
+	}
+
+	p {
+		background: white;
+		border-left: .25em solid white;
+		border-right: .25em solid white;
 	}
 }
