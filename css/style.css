@@ -85,7 +85,7 @@ body {
 p {
 	font-family: museo-slab, sans-serif;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 1.25rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
@@ -225,5 +225,61 @@ a:visited {
 
 	#main-cover {
 		align-items: center;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.stripey {
+		background: repeating-linear-gradient(
+		225deg,
+		#23b3d3,
+		#23b3d3 1.5rem,
+		#ad00ed 1.5rem,
+		#ad00ed 3rem
+		);
+		background-attachment: fixed;
+	}
+
+	.names {
+		background: black;
+		color: white;
+		border-left: .25em solid black;
+		border-right: .25em solid black;
+	}
+
+	#project-container {
+		background: #23b3d2;
+	}
+
+	.project {
+		background: black;
+		border: #23b3d3 solid 1rem;
+		border-top: #23b3d3 solid 2rem;
+		border-bottom: #23b3d3 solid 2rem;
+		padding: 1em;
+	}
+
+	.project-title {
+		color: white;
+	}
+
+	.project > p {
+		color: white;
+	}
+
+	.project a {
+		color: white;
+	}
+
+	.project a:visited {
+		color: white;
+	}
+
+	#project-container .project:first-child {
+		border-left: #23b3d3 solid 1rem;
+	}
+
+	#project-container .project:last-child {
+		border-right: #23b3d3 solid 1rem;
 	}
 }
