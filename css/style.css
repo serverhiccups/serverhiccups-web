@@ -1,0 +1,229 @@
+body {
+	margin: 0;
+}
+
+#main-cover {
+	display: flex;
+	height: calc(50vh - 1.5em);
+	width: 100vw;
+	flex-direction: column;
+	justify-content: center;
+	animation-duration: 3s;
+	animation-name: slideup;
+}
+
+#name-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 2em;
+}
+
+.names {
+	display: flex;
+	font-size: 3.5em;
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	background: white;
+	border-left: .25em solid white;
+	border-right: .25em solid white;
+}
+
+#floating-nav {
+	position: fixed;
+	top: .75rem;
+	right: -2em;
+	height: 3em;
+	width: 100vw;
+	z-index: 9999;
+}
+
+#floating-nav > a {
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5em;
+	background: white;
+	margin-right: .5em;
+	border-left: .25em solid white;
+	border-right: .25em solid white;
+	text-decoration: none;
+	outline: .2em solid black;
+}
+
+#projects {
+	width: auto;
+	height: auto;
+	padding-top: 3.75em;
+	overflow-y: hidden;
+}
+
+.section-title {
+	font-size: 2.5em;
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	margin-left: 2rem;
+	background: black;
+	color: white;
+	border-left: .25em solid black;
+	border-right: .25em solid black;
+}
+
+.stripey {
+	background: repeating-linear-gradient(
+	225deg,
+	#00c2ed,
+	#00c2ed 1.5rem,
+	#00ff1b 1.5rem,
+	#00ff1b 3rem
+	);
+	background-attachment: fixed;
+}
+
+p {
+	font-family: museo-slab, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.25rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+#project-container {
+	width: 100%;
+	height: 24rem;
+	background: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+
+.project {
+	scroll-snap-align: center;
+	width: 18rem;
+	min-width: 18rem;
+	height: 18rem;
+	background: white;
+	border: black solid 1rem;
+	border-top: black solid 2rem;
+	border-bottom: black solid 2rem;
+	padding: 1em;
+}
+
+.project > p {
+	margin-left: 0em;
+	margin-right 0em;
+}
+
+#project-container .project:first-child {
+	border-left: black solid 2rem;
+}
+
+#project-container .project:last-child {
+	border-right: black solid 2rem;
+}
+
+.project-title {
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+a {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+.project-link {
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.25em;
+}
+
+#aboutme, #contact {
+	width: auto;
+	height: auto;
+	padding-top: 3.75em;
+	padding-bottom: .75em;
+}
+
+#copybox {
+	display: flex;
+	height: 4em;
+	width: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#copytext {
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+@keyframes slideup {
+	from {
+		height: calc(100vh - 1.5em);
+	}
+	to {
+		height: calc(50vh - 1.5em);
+	}
+}
+
+@media (max-width: 640px) {
+	.names {
+		font-size: 2.5rem;
+	}
+
+	#project-container {
+		font-size: 0.75em;
+		height: 18rem;
+	}
+
+	#project-container .project:first-child {
+		border-left: black solid 1rem;
+	}
+
+	#project-container .project:last-child {
+		border-right: black solid 1rem;
+	}
+
+	.project {
+		width: 14rem;
+		min-width: 14rem;
+		height: 14rem;
+		border: black solid .5rem;
+		border-top: black solid .5rem;
+		border-bottom: black solid .5rem;
+		padding: 1em;
+	}
+
+	#floating-nav {
+		display: none;
+	}
+
+	#aboutme, #contact, #projects {
+		padding-top: .75em;
+	}
+}
+
+@media (max-width: 400px) {
+	#name-box {
+		padding-left: 0;
+	}
+
+	#main-cover {
+		align-items: center;
+	}
+}
