@@ -227,6 +227,20 @@ a:visited {
 	#main-cover {
 		align-items: center;
 	}
+
+	.project > p {
+		font-size: 1rem;
+	}
+
+	#project-container {
+		overflow-y: hidden;
+	}
+}
+
+@media (max-height: 560px) {
+	#floating-nav {
+		display: none;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
