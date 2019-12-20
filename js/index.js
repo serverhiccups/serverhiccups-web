@@ -1,5 +1,5 @@
-// Only play the slideup animation once
 window.addEventListener('load', () => {
+	// Only play the slideup animation once
 	let animationPlayed = localStorage.getItem('animationPlayed');
 	let coverElement = document.getElementById("main-cover");
 	if(animationPlayed != 'true') {
