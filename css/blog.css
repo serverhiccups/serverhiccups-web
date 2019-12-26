@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+}
+
+.stripey {
+	background: repeating-linear-gradient(
+		225deg,
+		#00c2ed,
+		#00c2ed 1.5rem,
+		#00ff1b 1.5rem,
+		#00ff1b 3rem
+		);
+	background-attachment: fixed;	
+}
+
+#floating-nav {
+	position: fixed;
+	top: .75rem;
+	right: -2em;
+	height: 3em;
+	width: 100vw;
+	z-index: 9999;
+}
+
+#floating-nav > a {
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5em;
+	background: white;
+	margin-right: .5em;
+	border-left: .25em solid white;
+	border-right: .25em solid white;
+	text-decoration: none;
+	outline: .2em solid black;
+}
+
+#content, #index {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5rem;
+}
+
+#content {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	background: white;
+}
+
+.post {
+	padding-left: 2rem;
+}
+
+.post > a {
+	display: block;
+	font-size: 2rem;
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	background: white;
+	border-left: .25em solid white;
+	border-right: .25em solid white;
+	width: max-content;
+}
+
+a, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.post > span {
+	display: block;
+	font-size: 1.25rem;
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	background: black;
+	border-left: .25em solid black;
+	border-right: .25em solid black;
+	color: white;
+	width: max-content;
+	margin-bottom: .5rem;
+}
+
+#title {
+	display: block;
+	font-size: 2.5rem;
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	background: black;
+	border-left: .25em solid black;
+	border-right: .25em solid black;
+	color: white;
+	width: max-content;
+	margin-bottom: .5rem;
+	margin-left: 2rem;
+}
+
+#back {
+	display: block;
+	font-size: 1.5rem;
+	font-family: museo-slab, serif;
+	font-style: normal;
+	font-weight: 700;
+	background: black;
+	border-left: .25em solid black;
+	border-right: .25em solid black;
+	color: white;
+	width: max-content;
+	margin-bottom: .5rem;
+}
+
+#content > * {
+	font-size: 1.25rem;
+	font-family: museo-sans, serif;
+	font-style: normal;
+	font-weight: 500;
+	background: white;
+	border-left: .25em solid white;
+	border-right: .25em solid white;
+	width: max-content;
+}
