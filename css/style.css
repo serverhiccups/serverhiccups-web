@@ -5,7 +5,6 @@ body {
 #main-cover {
 	display: flex;
 	height: calc(50vh - 1.5em);
-	width: 100vw;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -31,9 +30,8 @@ body {
 #floating-nav {
 	position: fixed;
 	top: .75rem;
-	right: -2em;
+	left: 2em;
 	height: 3em;
-	width: 100vw;
 	z-index: 9999;
 }
 
@@ -98,7 +96,8 @@ p {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	overflow-x: scroll;
+	overflow-x: auto;
+	overflow-y: hidden;
 	scroll-snap-type: x mandatory;
 }
 
@@ -116,7 +115,7 @@ p {
 
 .project > p {
 	margin-left: 0em;
-	margin-right 0em;
+	margin-right: 0em;
 	width: auto;
 }
 
