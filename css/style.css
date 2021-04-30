@@ -154,14 +154,6 @@ a:visited {
 	height: auto;
 	padding-top: 3.75em;
 	padding-bottom: .75em;
-	background: repeating-linear-gradient(
-	180deg,
-	#00c2ed,
-	#00c2ed 1.5rem,
-	#00ff1b 1.5rem,
-	#00ff1b 3rem
-	);
-	background-attachment: fixed;
 }
 
 #copybox {
@@ -254,17 +246,6 @@ a:visited {
 	.stripey {
 		background: repeating-linear-gradient(
 		225deg,
-		#23b3d3,
-		#23b3d3 1.5rem,
-		#ad00ed 1.5rem,
-		#ad00ed 3rem
-		);
-		background-attachment: fixed;
-	}
-
-	#contact, #aboutme {
-		background: repeating-linear-gradient(
-		180deg,
 		#23b3d3,
 		#23b3d3 1.5rem,
 		#ad00ed 1.5rem,
